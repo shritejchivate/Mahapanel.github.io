@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maha</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="../../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="../../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+    <!-- BS Stepper -->
+    <link rel="stylesheet" href="../../plugins/bs-stepper/css/bs-stepper.min.css">
+    <!-- dropzonejs -->
+    <link rel="stylesheet" href="../../plugins/dropzone/min/dropzone.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <nav class="main-header navbar navbar-expand navbar-dark">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item top-nav-css">
+                    <a class="nav-link">KIOSK</a>
+                </li>
+                <li class="nav-item top-nav-css">
+                    <a class="nav-link">CSC:32465435134343313</a>
+                </li>
+                <li class="nav-item top-nav-css">
+                    <a class="nav-link">Village:</a>
+                </li>
+                <li class="nav-item top-nav-css">
+                    <button class="btn btn-sm btn-success mt-1">View Balance</button>
+                </li>
+                <li class="nav-item top-nav-css">
+                    <a class="nav-link">English</a>
+                </li>
+                <!-- Navbar Search  -->
+                <li class="nav-item top-nav-css">
+                    <div class="navbar-search-block">
+                        <form class="form-inline pt-1">
+                            <div class="input-group input-group-sm">
+                                <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-navbar" type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+
+                <li class="nav-item top-nav-css">
+                    <div class="btn-group">
+                        <img src="../../dist/img/user2-160x160.jpg" class="dropdown-toggle img-circle elevation-2"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="height: auto;
+                         width: 2.1rem;">
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item">My Profile </a>
+                            <a class="dropdown-item">Account Settings</a>
+                            <a class="dropdown-item">Help</a>
+                            <a class="dropdown-item">Logout</a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="../../index.html" class="brand-link">
+                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">Admin Panel</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Abc Xyz</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <li class="nav-item">
+                            <a href="../../index.html" class="nav-link">
+                                <p>
+                                    Home
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <p>
+                                    Logout
+                                </p>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </nav>
+
+            </div>
+
+        </aside>
+
+        <div class="content-wrapper">
+
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-12">
+                            <h3>Certificate of Income</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content" id="caste-form">
+                <div class="container-fluid">
+
+                    <div class="card p-4" style="border-radius: 0;box-shadow: none;">
+
+                        <div class="card card-default">
+                            <div class="card-header" style="background: #E0E0E0;">
+                                <h1 class="card-title" style="font-size: 1.4rem;">Applicant Details:</h1>
+                            </div>
+
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="form1">Salutation</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control" id="form1">
+                                                <option value="---Select---">---Select---</option>
+                                                <option>Kumar</option>
+                                                <option>Lawyer</option>
+                                                <option>Virgin</option>
+                                                <option>Mr.</option>
+                                                <option>Mrs</option>
+                                                <option>Ms</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Full Name (English)</label>
+                                            <span class="star">*</span>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Full Name (Marathi)</label>
+                                            <span class="star">*</span>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-------------------------------------------------------->
+                                <div class="row" style="border-bottom: 1px solid #cdd3b1;">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Salutation</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option>Mr.</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Father's Name (English) </label>
+                                            <span class="star">*</span>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Father's Name (Marathi)</label>
+                                            <span class="star">*</span>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-------------------------------------------------------->
+                                <div class="row mt-3">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Certificate of Income </label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option>For 1 year</option>
+                                                <option>For 3 year</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Date of Birth</label>
+                                            <input type="date" class="form-control" id="DOB">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Age</label>
+                                            <span class="star">*</span>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!------------------------------------>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Gender</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option>Others</option>
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Business</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Mobile number</label>
+                                            <span class="star">*</span>
+                                            <input type="tel" class="form-control" id="mobileno">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input class="form-control" type="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>PAN card number</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Aadhaar card number</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!-- Residence Details -->
+                        <div class="card card-default">
+                            <div class="card-header" style="background: #E0E0E0;">
+                                <h1 class="card-title" style="font-size: 1.4rem;">Applicant's residence details:</h1>
+                            </div>
+
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Address</label>
+                                            <span class="star">*</span>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Way</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Department</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Building</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Landmark</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>District</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Taluka</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Village</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Pincode</label>
+                                            <span class="star">*</span>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!-- ---------------------------- -->
+                        <div class="card card-default">
+                            <div class="card-header" style="background: #E0E0E0;">
+                                <h1 class="card-title" style="font-size: 1.4rem;">Family wise information:</h1>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Relationships</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option>Automatically</option>
+                                                <option>Grandfather</option>
+                                                <option>Mother-in-law</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Name of family person</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Age</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Business / Job</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option>10th below</option>
+                                                <option>Housewife</option>
+                                                <option>12v</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Generated</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-md-12 text-center">
+                                        <button class="btn btn-success">Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="card card-default">
+                            <div class="card-header" style="background: #E0E0E0;">
+                                <h1 class="card-title" style="font-size: 1.4rem;">Beneficiary details:</h1>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label>The person's relationship with the applicant</label>
+                                        <span class="star">*</span>
+                                        <select class="form-control">
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>Beneficiary name</label>
+                                        <span class="star">*</span>
+                                        <select class="form-control">
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <label></label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label>Details of what the certificate of income is required for</label>
+                                        <span class="star">*</span>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="card card-default">
+                            <div class="card-header" style="background: #E0E0E0;">
+                                <h1 class="card-title" style="font-size: 1.4rem;">Details of income received by the
+                                    family from agriculture:</h1>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label>Account holder name </label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>Total area of ​​agriculture</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <label></label>
+                                        <select class="form-control">
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label>Description of farming</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>District</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Taluka</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Village</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--  -->
+                        <div class="card card-default">
+                            <div class="card-header" style="background: #E0E0E0;">
+                                <h1 class="card-title" style="font-size: 1.4rem;">Details of family income from various
+                                    sources:</h1>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <table class="table table-borderless" cellpadding="0" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>No. Source of income</th>
+                                                    <th>2017 - 2018</th>
+                                                    <th>2018 - 2019</th>
+                                                    <th>2019 - 2020</th>
+                                                    <th>Brief information on income and source of income</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Agriculture</td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Agricultural supplement business</td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Dairy business</td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Farm labor</td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Other wages</td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Other Business / Industry / Business / Trade</td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>Income from real estate other than agriculture</td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>Annual income from monthly income like job salary / retirement
+                                                        salary / honorarium / grant etc.</td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>Interest / dividend on investment and similar income</td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td>Income from any other means of income other than those mentioned
+                                                        above</td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total<span class="star">*</span></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Total (literal)<span class="star">*</span></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                    <td><input class="form-control" type="text" maxlength="9"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Attachment documents regarding income</label>
+                                            <select class="form-control">
+                                                <option value="0">--- Select ---</option>
+                                                <option value="प्रतिज्ञापत्र">Affidavit</option>
+                                                <option value="तलाठी अहवाल">Talathi Report</option>
+                                                <option value="आयकर विवरणपत्र ">Income tax return </option>
+                                                <option value="वेतन प्रमाणपत्र">Salary certificate</option>
+                                                <option value=" नगर सेवक यांचे प्रमाणपत्र">Certificate of Municipal
+                                                    Servant</option>
+                                                <option value="मंडळ अधिकारी अहवाल">Board Officer Report</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+
+                        <div class="card card-default mt-2">
+                            <div class="card-header" style="background: #E0E0E0;">
+                                <h1 class="card-title" style="font-size: 1.4rem;">Agreement Details :</h1>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>I declare that all of the above information is true according to my personal
+                                            information and beliefs. If this information is found to be false, I am
+                                            fully aware that I will be prosecuted under Sections 199 and 200 of the
+                                            Indian Penal Code 1960 and other / relevant laws and I will be liable to
+                                            punishment accordingly.</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+
+                                        <span class="form-check">
+                                            <span>Agreement Accepted :</span> &nbsp; &nbsp; &nbsp; &nbsp;
+                                            <input type="checkbox" class="form-check-input" id="accepet">
+                                            <label class="form-check-label" for="accepet">I accept</label>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="col-md-12 text-center">
+                                        <button type="button" class="btn btn-success mt-1">include</button>&nbsp;
+                                        <button type="button" class="btn btn-warning mt-1">replace the</button>&nbsp;
+                                        <button type="button" class="btn btn-danger mt-1">back</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--  -->
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b>Version</b> 3.1.0-rc
+            </div>
+            <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All
+            rights
+            reserved.
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+
+
+
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Select2 -->
+    <script src="../../plugins/select2/js/select2.full.min.js"></script>
+    <!-- Bootstrap4 Duallistbox -->
+    <script src="../../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+    <!-- InputMask -->
+    <script src="../../plugins/moment/moment.min.js"></script>
+    <!-- date-range-picker -->
+    <script src="../../plugins/daterangepicker/daterangepicker.js"></script>
+    <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Bootstrap Switch -->
+    <script src="../../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <!-- BS-Stepper -->
+    <script src="../../plugins/bs-stepper/js/bs-stepper.min.js"></script>
+    <!-- dropzonejs -->
+    <script src="../../plugins/dropzone/min/dropzone.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../dist/js/demo.js"></script>
+
+</body>
+
+</html>

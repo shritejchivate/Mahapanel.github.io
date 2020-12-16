@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin panel maha</title>
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+
+  <!-- Bootstrap Color Picker -->
+  <link rel="stylesheet" href="plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <!-- Bootstrap4 Duallistbox -->
+  <link rel="stylesheet" href="plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+  <!-- BS Stepper -->
+  <link rel="stylesheet" href="plugins/bs-stepper/css/bs-stepper.min.css">
+  <!-- dropzonejs -->
+  <link rel="stylesheet" href="plugins/dropzone/min/dropzone.min.css">
+  <link rel="stylesheet" href="plugins/OwlCarousel/assets/owl.carousel.css">
+  <link rel="stylesheet" href="plugins/OwlCarousel/assets/owl.theme.default.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+
+    <nav class="main-header navbar navbar-expand navbar-dark navbar-fixed-top">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- <li class="nav-item top-nav-css">
+          <a class="nav-link">KIOSK</a>
+        </li>
+        <li class="nav-item top-nav-css">
+          <a class="nav-link">CSC:32465435134343313</a>
+        </li>
+        <li class="nav-item top-nav-css">
+          <a class="nav-link">Village:</a>
+        </li>
+        <li class="nav-item top-nav-css">
+          <button class="btn btn-sm btn-success mt-1">View Balance</button>
+        </li> -->
+        <li class="nav-item top-nav-css pt-1">
+          <div id="google_translate_element"></div>
+        </li>
+        <!-- Navbar Search  -->
+        <li class="nav-item top-nav-css">
+          <div class="navbar-search-block">
+            <form class="form-inline pt-1">
+              <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+
+        <li class="nav-item top-nav-css">
+          <div class="btn-group">
+            <img src="dist/img/user2-160x160.jpg" class="dropdown-toggle img-circle elevation-2" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" style="height: auto;
+                         width: 2.1rem;">
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item">My Profile </a>
+              <a class="dropdown-item">Account Settings</a>
+              <a class="dropdown-item">Help</a>
+              <a class="dropdown-item">Logout</a>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-link">
+        <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8">
+        <span class="brand-text font-weight-light">Admin Panel</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">Abc Xyz</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2 newCss">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link active">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  Dashboard
+                </p>
+              </a>
+            </li>
+            
+            <!--Central Government OBC  -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-laptop"></i>
+                <p>
+                  Caste Certificate
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/ObcDoc.html" class="nav-link">
+                    <span> >> Central Government OBC Certificate </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!--Central Government SC  -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-laptop"></i>
+                <p>
+                  Central Government SC Certificate
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/SCdoc.html" class="nav-link">
+                    <span>>> Central Government SC Certificate</span>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+             <!--Central Government ST  -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-laptop"></i>
+                <p>
+                  Central Government ST Certificate
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/STdoc.html" class="nav-link">
+                    <span>>> Central Government ST Certificate</span>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+             <!--Central Government SBC-A  -->
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-laptop"></i>
+                <p>
+                  Central Government SBC-A Certificate
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/SbcaDoc.html" class="nav-link">
+                    <span>>> Central Government SBC-A Certificate</span>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+             <!--Central Government Maratha -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-laptop"></i>
+                <p>
+                  Central Government Maratha  Certificate
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/SEBCdoc.html" class="nav-link">
+                    <span>>> Central Government Maratha Certificate</span>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+             <!--Central Government VJNT -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-laptop"></i>
+                <p>
+                  Central Government VJNT Certificate
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/VjntDoc.html" class="nav-link">
+                    <span>>> Central Government VJNT Certificate</span>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+             <!-- General Affidavit-->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-laptop"></i>
+                <p> General Affidavit 
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/GeneralAffidform.html" class="nav-link">
+                    <span>>> General Affidavit Form</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Non-Creamy Layer Certificate -->       
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-laptop"></i>
+                <p>Non-Creamy Layer Certificate
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/NonCreamy.html" class="nav-link">
+                    <span>>> Non-Creamy Layer Certificate </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- वय राष्ट्रीयत्व आणि अधिवास प्रमाणपत्र -->       
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-laptop"></i>
+                <p> Age, Nationality and Domicile Certificate
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/AgeNationalityForm.html" class="nav-link">
+                    <span>>> Age, Nationality and Domicile Certificate </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          
+            <!-- मिळकत प्रमाणपत्र  -->       
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-laptop"></i>
+                <p> Income Certificate
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/incomeC.html" class="nav-link">
+                    <span>>> Income Certificate</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+             <!-- Application for ration card -->       
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-laptop"></i>
+                <p> Application for ration card
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/rationCardform.html" class="nav-link">
+                    <span>>> Application for ration card</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!--  Application for ration card - Exclusion of units -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-laptop"></i>
+                <p> Application for ration card - Exclusion of units
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/exclusionRation.html" class="nav-link">
+                    <span>>>  Application for ration card - Exclusion of units</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!--  Application for ration card - Including of units -->    
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-laptop"></i>
+                <p> Application for ration card - Including units
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/includingRation.html" class="nav-link">
+                    <span>>>  Application for ration card - Including units</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Second Ration Card Application (Copy)  -->       
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-laptop"></i>
+                <p> Second Ration Card Application (Copy)
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/secondRation.html" class="nav-link">
+                    <span>>> Second Ration Card Application (Copy)</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Application for getting certified copy -->       
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-laptop"></i>
+                <p> Application for getting certified copy - Tehsildar's Office
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/tahsildarForm.html" class="nav-link">
+                    <span>>> Application for getting certified copy - Tehsildar's Office</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!--EWS Certificate   -->       
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-laptop"></i>
+                <p> EWS Certificate
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/ewsCertificateform.html" class="nav-link">
+                    <span>>> EWS Certificate </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--  -->
+          </ul>
+        </nav>
+
+      </div>
+    </aside>
+
+    <div class="content-wrapper">
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-12">
+              <div class="pagetitle clearfix">
+                <!-- Form Heading Start Here-->
+                <h1 class="pull-left">
+                    <i class="fa fa-book"></i>
+                    <span id="pageTitle">Menu</span></h1>
+              </div>
+            </div><!-- /.col -->
+
+          </div><!-- /.row -->
+
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-2">
+                  <span class="tit1">MOST USED</span><br>
+                  <span class="tit2">SERVICES</span>
+                </div>
+                <div class="col-sm-10 well">
+                  <div class="owl-carousel owl-theme image-slider">
+                    <div><a><span><i class="fa fa-book"></i> Age Nationality and Domicile</span></a></div>
+                    <div><a><span><i class="fa fa-book"></i> General Affidavit</span></a></div>
+                    <div><a><span><i class="fa fa-book"></i> Ration Card-Addition</span></a></div>
+                    <div><a><span><i class="fa fa-book"></i> Caste Certificate</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      
+
+        </div><!-- /.container-fluid -->
+      </div>
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+        
+          <div class="row">
+            <div class="col-lg-3 col-6">
+              <!-- small box -->
+              <div class="small-box bg-danger">
+                <div class="inner">
+                  <h4>Transactions Count</h4>
+                  <p>Yearly<strong class="float-right">364</strong></p>
+                  <p>Monthly<strong class="float-right">31</strong></p>
+                </div>
+              </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+              <!-- small box -->
+              <div class="small-box bg-info">
+                <div class="inner">
+                  <h4>PoS Transactions</h4>
+                  <p>Yearly<strong class="float-right">2</strong></p>
+                  <p>Monthly<strong class="float-right">0</strong></p>
+                  <p>Total Pending<strong class="float-right">40</strong></p>
+                </div>
+                
+              </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+              <!-- small box -->
+              <div class="small-box bg-warning">
+                <div class="inner">
+                  <h4>Wallet Balance</h4>
+                  <p><strong>48.18</strong></p>
+                </div>
+                
+              </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+              <!-- small box -->
+              <div class="small-box bg-success">
+                <div class="inner">
+                  <h4>eTransaction Status</h4>
+                  <p>Pending<strong class="float-right">---</strong></p>
+                  <p>Close<strong class="float-right">---</strong></p>
+                </div>
+                
+              </div>
+            </div>
+            <!-- ./col -->
+          </div>
+
+          <div class="row mt-1">
+
+            <div class="col-lg-8">
+             <div class="card card-danger" style="border:1px solid #DC3545;">
+              <div class="card-header">
+                <h3 class="card-title">
+                  <span><i class="fa fa-folder-open"></i></span> Management information system
+                </h3>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body" style="background: #f5f3f3;">
+
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="chart">
+                      <canvas id="barChart" style="max-width: 100%;"></canvas>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <p style="color: black; text-align: center;font-weight: 600;">Transaction count of last six months.</p>
+                    <canvas id="donutChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                  </div>
+
+                </div>
+                
+              </div>
+              <!-- /.card-body -->
+            </div>
+          </div>
+
+          <div class="col-md-4">  
+            <!--  eLOCKER -->
+            <div class="card card-info elockerCard" style="border: 1px solid #17A2B8;">
+              <div class="card-header">
+                <h3 class="card-title">
+                  <span><i class="fa fa-key"></i></span> eLOCKER
+                </h3>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body" style="background: #f5f3f3;">
+                <div class="row">
+                  <div class="col-md-12">
+                     <img class="img-fluid" src="dist/img/digilocker.jpg">
+                     <ul>
+                      <li> Login using Aadhaar</li>
+                      <li> Upload Documents</li>
+                      <li> View Documents Issued by Dept.</li>
+                      <li> Digitally Signed Documents</li>
+                      <li> Share Your Documents</li>
+                     </ul>
+                     <div>
+                       <button class="btn btn-info btn-sm"><i class="fa fa-search"></i> View more</button>&nbsp;&nbsp;
+                       <button class="btn btn-info btn-sm"><i class="fa fa-pencil"></i> Register yourself</button>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+
+        <!-- Last 10 Electronic Transactions  -->
+        <div class="row mt-1">
+        
+          <div class="col-lg-8">
+            <div class="card bg-dark" style="border:1px solid #535A6C;">
+              <div class="card-header">
+                <h3 class="card-title">
+                  <span><i class="fa fa-envelope-o"></i></span> Last 10 Electronic Transactions
+                </h3>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-light btn-sm">eDistrict status</button>
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="card-body" style="background: #fff;">
+                <div class="row">
+                  <div class="col-md-12">
+                    <table class="table table-striped">
+                      <tbody>
+                        <tr>
+                          <th>Name Of Citizen</th>
+                          <th>Service</th>
+                          <th>Date</th>
+                          <th>Status</th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Support -->
+          <div class="col-lg-4">
+            <div class="card bg-dark" style="border:1px solid #758f27;">
+
+              <div class="card-header" style="background: #758f27;">
+                <h3 class="card-title">
+                  <span><i class="fa fa-envelope-o"></i></span> Support
+                </h3>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-light btn-sm">New Complaint</button>
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="card-body" style="background: #fff;">
+             
+              </div>
+
+            </div>
+          </div>
+
+        </div>       
+                
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="main-footer">
+          <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights
+      reserved.
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Select2 -->
+  <script src="plugins/select2/js/select2.full.min.js"></script>
+  <!-- Bootstrap4 Duallistbox -->
+  <script src="plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+  <!-- InputMask -->
+  <script src="plugins/moment/moment.min.js"></script>
+  <!-- ChartJS -->
+  <script src="plugins/chart.js/Chart.min.js"></script>
+  <!-- date-range-picker -->
+  <script src="plugins/daterangepicker/daterangepicker.js"></script>
+  <!-- bootstrap color picker -->
+  <script src="plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+  <!-- Tempusdominus Bootstrap 4 -->
+  <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- Bootstrap Switch -->
+  <script src="plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+  <!-- BS-Stepper -->
+  <script src="plugins/bs-stepper/js/bs-stepper.min.js"></script>
+  <!-- dropzonejs -->
+  <script src="plugins/dropzone/min/dropzone.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+ <!-- google translate -->
+ <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+ <!--  -->
+ <script src="plugins/OwlCarousel/owl.carousel.js"></script>
+ <script src="dist/js/pages/owl.js"></script>
+ <!-- AdminLTE for demo purposes -->
+  <script src="dist/js/demo.js"></script>
+
+
+  <script>
+    $(function () {
+      var ctx = document.getElementById("barChart").getContext('2d');
+      var barChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ["Dec", "Nov", "Oct", "Sep", "Aug", "Jul", "Jun"],
+          datasets: [{
+            label: 'Online',
+            data: [12, 19, 3, 17, 28, 24, 7],
+            backgroundColor: "#33414E"
+          }, {
+            label: 'Offline',
+            data: [30, 29, 5, 5, 20, 3, 10],
+            backgroundColor: "#3FBAE4"
+          }]
+        }
+      })
+
+      // Donut chart
+    var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
+    var donutData        = {
+      labels: [
+          'Electricity Bill',
+          'General Affidavit',
+          'Ration Card - Addition',
+          'Age Nationality and Domicile',
+      ],
+      datasets: [
+        {
+          data: [121,42,24,21],
+          backgroundColor : ['#f56954', '#00a65a', '#f39c12', '#00c0ef'],
+        }
+      ]
+    }
+    var donutOptions     = {
+      maintainAspectRatio : false,
+      responsive : true,
+    }
+
+    new Chart(donutChartCanvas, {
+      type: 'doughnut',
+      data: donutData,
+      options: donutOptions
+    })
+
+    })
+    //-------google translate-------//
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en',includedLanguages: 'mr,en'}, 'google_translate_element');
+    }
+    //----------------------------//
+
+  </script>
+
+
+</body>
+
+</html>

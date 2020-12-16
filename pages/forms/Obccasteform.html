@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdminLTE 3 | Advanced form elements</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="../../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="../../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+    <!-- BS Stepper -->
+    <link rel="stylesheet" href="../../plugins/bs-stepper/css/bs-stepper.min.css">
+    <!-- dropzonejs -->
+    <link rel="stylesheet" href="../../plugins/dropzone/min/dropzone.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <nav class="main-header navbar navbar-expand navbar-dark">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item top-nav-css">
+                    <a class="nav-link">KIOSK</a>
+                </li>
+                <li class="nav-item top-nav-css">
+                    <a class="nav-link">CSC:32465435134343313</a>
+                </li>
+                <li class="nav-item top-nav-css">
+                    <a class="nav-link">Village:</a>
+                </li>
+                <li class="nav-item top-nav-css">
+                    <button class="btn btn-sm btn-success mt-1">View Balance</button>
+                </li>
+                <li class="nav-item top-nav-css">
+                    <a class="nav-link">English</a>
+                </li>
+                <!-- Navbar Search  -->
+                <li class="nav-item top-nav-css">
+                    <div class="navbar-search-block">
+                        <form class="form-inline pt-1">
+                            <div class="input-group input-group-sm">
+                                <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-navbar" type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+
+                <li class="nav-item top-nav-css">
+                    <div class="btn-group">
+                        <img src="../../dist/img/user2-160x160.jpg" class="dropdown-toggle img-circle elevation-2"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="height: auto;
+                         width: 2.1rem;">
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item">My Profile </a>
+                            <a class="dropdown-item">Account Settings</a>
+                            <a class="dropdown-item">Help</a>
+                            <a class="dropdown-item">Logout</a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="../../index.html" class="brand-link">
+                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">AdminLTE 3</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Alexander Pierce</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <li class="nav-item">
+                            <a href="../../index.html" class="nav-link">
+                                <p>
+                                    Home
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <p>
+                                    Logout
+                                </p>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </nav>
+
+            </div>
+
+        </aside>
+
+        <div class="content-wrapper">
+
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-12">
+                            <h2>Central Government OBC Caste Certificate</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content" id="caste-form">
+                <div class="container-fluid">
+
+                    <div class="card p-4" style="border-radius: 0;box-shadow: none;">
+                        <div class="card card-default">
+                            <div class="card-header" style="background: #E0E0E0;">
+                                <h1 class="card-title" style="font-size: 1.4rem;">Applicant Details:</h1>
+                            </div>
+
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="form1">Salutation</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control" id="form1">
+                                                <option value="---Select---">---Select---</option>
+                                                <option>Advocate</option>
+                                                <option>Kumar</option>
+                                                <option>Kumari</option>
+                                                <option>Mr.</option>
+                                                <option>Mrs</option>
+                                                <option>Ms</option>
+                                                <option>Shri</option>
+                                                <option>Shrimati</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Full Name (English)</label>
+                                            <span class="star">*</span>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Full Name (Marathi)</label>
+                                            <span class="star">*</span>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-------------------------------------------------------->
+                                <div class="row" style="border-bottom: 1px solid #cdd3b1;">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Salutation</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option>Mr.</option>
+                                                <option>Shri</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Father's Name (English) </label>
+                                            <span class="star">*</span>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Father's Name (Marathi)</label>
+                                            <span class="star">*</span>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-------------------------------------------------------->
+                                <div class="row mt-3">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Date of Birth</label>
+                                            <input type="date" class="form-control" id="DOB">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Age</label>
+                                            <span class="star">*</span>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Gender</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option>F</option>
+                                                <option>M</option>
+                                                <option>T</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-------------------------------------------------------->
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Mobile</label>
+                                            <span class="star">*</span>
+                                            <input type="tel" class="form-control" id="mobileno">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Email Id</label>
+                                            <input class="form-control" type="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Address</label>
+                                            <span class="star">*</span>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-------------------------------------------------------->
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Street</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Locality</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Building</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-------------------------------------------------------->
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Landmark</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>District</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Taluka</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-------------------------------------------------------->
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Village</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Pincode</label>
+                                            <span class="star">*</span>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Occupation</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option>Artist</option>
+                                                <option>B.A</option>
+                                                <option>B.E</option>
+                                                <option>Bussiness</option>
+                                                <option>Doctor</option>
+                                                <option>Engineer</option>
+                                                <option>Farm Wages</option>
+                                                <option>Farmer</option>
+                                                <option>Government Employee</option>
+                                                <option>Hardware Professional</option>
+                                                <option>Housewife</option>
+                                                <option>Industrialist</option>
+                                                <option>Lawyer</option>
+                                                <option>Nurse</option>
+                                                <option>Others</option>
+                                                <option>Private Service</option>
+                                                <option>Professor</option>
+                                                <option>Software Professional</option>
+                                                <option>Student</option>
+                                                <option>Teacher</option>
+                                                <option>Wages</option>
+                                                <option>Worker</option>
+                                                <option>Writer</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-------------------------------------------------------->
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>UID Number</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!-- Relation of benifitiary of applicant -->
+                        <div class="card card-default mt-2">
+                            <div class="card-header" style="background: #E0E0E0;">
+                                <h1 class="card-title" style="font-size: 1.4rem;">Relation of Benificiary with Applicant
+                                </h1>
+                            </div>
+
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Relation of Benificiary with Applicant</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option>Brother</option>
+                                                <option>Daughter</option>
+                                                <option>Father</option>
+                                                <option>Grand Daughter</option>
+                                                <option>Grand Son</option>
+                                                <option>Husband</option>
+                                                <option>Mother</option>
+                                                <option>Nephew</option>
+                                                <option>Niece</option>
+                                                <option>Self</option>
+                                                <option>Sister</option>
+                                                <option>Son</option>
+                                                <option>Wife</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!------------------------------------->
+
+                        <!-- Beneficiary Details -->
+                        <div class="card card-default mt-2">
+                            <div class="card-header" style="background: #E0E0E0;">
+                                <h1 class="card-title" style="font-size: 1.4rem;">Beneficiary Details</h1>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="form1">Salutation</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control" id="form1">
+                                                <option value="---Select---">---Select---</option>
+                                                <option>Advocate</option>
+                                                <option>Kumar</option>
+                                                <option>Kumari</option>
+                                                <option>Mr.</option>
+                                                <option>Mrs</option>
+                                                <option>Ms</option>
+                                                <option>Shri</option>
+                                                <option>Shrimati</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Full Name (English)</label>
+                                            <span class="star">*</span>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Full Name (Marathi)</label>
+                                            <span class="star">*</span>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Date of Birth</label>
+                                            <input type="date" class="form-control" id="DOB">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Gender</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option>F</option>
+                                                <option>M</option>
+                                                <option>T</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Mobile</label>
+                                            <input class="form-control" type="tel">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="row mt-3">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Email Id</label>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>UID No</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Permanent Address</label>
+                                            <span class="star">*</span><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="tab" value="option1" checked onclick="show1();">
+                                            <label class="form-check-label" for="yes">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="tab" value="option2" onclick="show2();">
+                                            <label class="form-check-label" for="no">No</label>
+                                        </div>
+                                     </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!------------------------------------->
+
+
+                        <!-- Beneficiary Address Details -->
+                        <div class="card card-default mt-2 hide-div" id="div1">
+                            <div class="card-header" style="background: #E0E0E0;">
+                                <h1 class="card-title" style="font-size: 1.4rem;"> Beneficiary Address Details</h1>
+                            </div>
+                        
+                            <div class="card-body">
+                                <div class="row">
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Address</label>
+                                            <span class="star">*</span>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Street</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Locality</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Building</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Landmark</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>District</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Taluka</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Village</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Pincode</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                        <!------------------------------------->
+
+
+                        <!-- Education details of Beneficiary -->
+                        <div class="card card-default mt-2">
+                            <div class="card-header" style="background: #E0E0E0;">
+                                <h1 class="card-title" style="font-size: 1.4rem;">Education details of Beneficiary</h1>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Qualification</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Board/university</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Start Year</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>End Year</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Name & Address of Institute</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <div class="form-group">
+                                            <button class="btn btn-success" type="submit">Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--  -->
+                        
+                        
+                        <!-- Beneficiary's Other Details -->
+                        <div class="card card-default mt-2">
+                            <div class="card-header" style="background: #E0E0E0;">
+                                <h1 class="card-title" style="font-size: 1.4rem;">Beneficiary's Other Details</h1>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="row">
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>District of Birth</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Taluka of Birth</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Village of Birth</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Year of Migration</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Reason for Migration</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>Whether applicant’s relative been issued a caste certificate or availed Govt. benefits on the basis of caste/tribe claim</p>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="tab1"  value="opt1"  onclick="showdiv();">
+                                            <label class="form-check-label">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="tab1"  value="opt2" checked onclick="showdiv1();">
+                                            <label class="form-check-label">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row hide-div1 mt-2" id="div11">
+                                    <div class="col-md-4">
+                                        <label>Details of benefits availed</label>
+                                        <span class="star">*</span>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                               
+                                <div class="row mt-3">
+                                    <div class="col-md-12">
+                                        <p>Have you applied before for Caste Certificate (including other states)</p>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="tab2" value="opt11"  onclick="show3();">
+                                            <label class="form-check-label">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="tab2"  value="opt22" checked onclick="show4();">
+                                            <label class="form-check-label">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card card-default mt-2 hide-div11" id="divhide">
+                                    <div class="card-header" style="background: #E0E0E0;">
+                                        <h1 class="card-title" style="font-size: 1.4rem;">If yes, details of application</h1>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row mt-2">
+
+                                            <div class="col-md-4">
+                                                <label>Place of application</label>
+                                                <span class="star">*</span>
+                                                <input class="form-control" type="text">
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <label>Details of benefits availed</label>
+                                                <span class="star">*</span>
+                                                <input class="form-control" type="text">
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-------------------------->
+
+                          <!-- Beneficiary Caste/ Category Details -->
+                          <div class="card card-default mt-2">
+                            <div class="card-header" style="background: #E0E0E0;">
+                                <h1 class="card-title" style="font-size: 1.4rem;">Beneficiary Caste/ Category Details</h1>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Caste</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option>Aghri</option>
+                                                <option>adasd</option>
+                                                <option>asdasd</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Category</label>
+                                            <input type="text" class="form-control" placeholder="Central Government OBC" disabled>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Religion</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option>Buddhists</option>
+                                                <option>Christians</option>
+                                                <option>Hindu</option>
+                                                <option>Jain</option>
+                                                <option>Muslims</option>
+                                                <option>Sikhs</option>
+                                                <option>Zoroastrians (Parsis)</option>
+                                                <option>Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-------------------->
+
+                        <!-- Beneficiary fathers Address Details -->
+                        <div class="card card-default mt-2">
+                            <div class="card-header" style="background: #E0E0E0;">
+                                <h1 class="card-title" style="font-size: 1.4rem;"> Beneficiary Fathers Address Details</h1>
+                            </div>
+                        
+                            <div class="card-body">
+                                <div class="row">
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Address</label>
+                                            <span class="star">*</span>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Street</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Locality</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Building</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Landmark</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>District</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Taluka</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Village</label>
+                                            <span class="star">*</span>
+                                            <select class="form-control">
+                                                <option value="---Select---">---Select---</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Pincode</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                        <!------------------------------------->
+
+                         <!-- Other Details  -->
+                         <div class="card card-default mt-2">
+                            <div class="card-header" style="background: #E0E0E0;">
+                                <h1 class="card-title" style="font-size: 1.4rem;">Others Details</h1>
+                            </div>
+                        
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label for="reason">Reason:</label>
+                                        <span class="star">*</span>
+                                        <textarea class="form-control" rows="2" id="reason"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-2">
+                                    <div class="col-md-12">
+                                        <label>Do you need the Affidavit?</label>
+                                        <span class="star">*</span> <br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="r1" value="reas1" checked>
+                                            <label class="form-check-label">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="r1"  value="reas2">
+                                            <label class="form-check-label">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!------------------------------------>
+
+                        <div class="card card-default mt-2">
+                            <div class="card-header" style="background: #E0E0E0;">
+                                <h1 class="card-title" style="font-size: 1.4rem;">Agreement Details :</h1>
+                            </div>
+                        
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>I solemly affirm that the above mentioned information submitted by me is true and correct to my
+                                            knowledge and belief.I hereby agree to be liable for legal consequences for any information found incorrect or
+                                            untrue at a later date.</p>
+                                    </div>                                  
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                         
+                                        <span class="form-check">
+                                            <span>Agreement Accepted :</span> &nbsp; &nbsp; &nbsp; &nbsp;
+                                            <input type="checkbox" class="form-check-input" id="accepet">
+                                            <label class="form-check-label" for="accepet">I accept</label>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="col-md-12 text-center">
+                                        <button type="button" class="btn btn-success mt-1">Proceed</button>&nbsp;
+                                        <button type="button" class="btn btn-warning mt-1">Back</button>&nbsp;
+                                        <button type="button" class="btn btn-danger mt-1">Reset</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b>Version</b> 3.1.0-rc
+            </div>
+            <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All
+            rights
+            reserved.
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+
+
+
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Select2 -->
+    <script src="../../plugins/select2/js/select2.full.min.js"></script>
+    <!-- Bootstrap4 Duallistbox -->
+    <script src="../../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+    <!-- InputMask -->
+    <script src="../../plugins/moment/moment.min.js"></script>
+    <!-- date-range-picker -->
+    <script src="../../plugins/daterangepicker/daterangepicker.js"></script>
+    <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Bootstrap Switch -->
+    <script src="../../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <!-- BS-Stepper -->
+    <script src="../../plugins/bs-stepper/js/bs-stepper.min.js"></script>
+    <!-- dropzonejs -->
+    <script src="../../plugins/dropzone/min/dropzone.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../dist/js/demo.js"></script>
+
+    <script>
+        function show1(){
+        document.getElementById('div1').style.display ='none';
+        }
+        function show2(){
+        document.getElementById('div1').style.display = 'block';
+        }
+
+        function showdiv(){
+        document.getElementById('div11').style.display ='block';
+        }
+        function showdiv1(){
+        document.getElementById('div11').style.display = 'none';
+        }
+
+        function show3(){
+        document.getElementById('divhide').style.display ='block';
+        }
+        function show4(){
+        document.getElementById('divhide').style.display = 'none';
+        }
+
+    </script>
+</body>
+
+</html>
