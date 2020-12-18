@@ -985,6 +985,21 @@
                         </div>
                         <!------------------------------------->
 
+                        <!-------------Editor------------->
+                        <div class="card card-default mt-2">
+                            <div class="card-header" style="background: #E0E0E0;">
+                                <h1 class="card-title" style="font-size: 1.4rem;">Family Tree:</h1>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <textarea name="editor1"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-------------Editor------------->
+                        
                          <!-- Other Details  -->
                          <div class="card card-default mt-2">
                             <div class="card-header" style="background: #E0E0E0;">
@@ -1063,13 +1078,9 @@
         </div>
 
         <footer class="main-footer">
-            <div class="float-right d-none d-sm-block">
-                <b>Version</b> 3.1.0-rc
-            </div>
-            <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All
-            rights
-            reserved.
-        </footer>
+            <strong>Copyright &copy; ©2020 <a href="https://adminlte.io">Lok seva kendra</a>.</strong> All rights
+        reserved.
+      </footer>
 
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
@@ -1086,6 +1097,8 @@
     <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- editor jd -->
+    <script src="https://cdn.ckeditor.com/4.11.2/full/ckeditor.js"></script>
     <!-- Select2 -->
     <script src="../../plugins/select2/js/select2.full.min.js"></script>
     <!-- Bootstrap4 Duallistbox -->
@@ -1128,6 +1141,11 @@
         document.getElementById('divhide').style.display = 'none';
         }
 
+    </script>
+
+    <!-- editor js -->
+    <script>
+        CKEDITOR.replace( 'editor1' );
     </script>
 </body>
 
